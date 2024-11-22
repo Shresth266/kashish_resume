@@ -1,0 +1,150 @@
+import React from 'react';
+import { Github, Mail, Phone, Linkedin, ExternalLink, Code, Gamepad2, Bot, Palette } from 'lucide-react';
+
+const PersonalWebsite = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <div className="bg-blue-600 text-white">
+        <div className="container mx-auto px-6 py-24">
+          <h1 className="text-5xl font-bold mb-4">Kashish Thareja</h1>
+          <p className="text-xl mb-6">Computer Science Student & Tech Enthusiast</p>
+          <div className="flex space-x-4">
+            <a href="mailto:kashishth89@gmail.com" className="flex items-center gap-2 hover:text-blue-200">
+              <Mail size={20} /> Email
+            </a>
+            <a href="tel:+919953822550" className="flex items-center gap-2 hover:text-blue-200">
+              <Phone size={20} /> Phone
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="container mx-auto px-6 py-16">
+        <h2 className="text-3xl font-bold mb-8">About Me</h2>
+        <p className="text-lg text-gray-700 mb-6">
+          I'm a results-driven engineering student at SRM University, Haryana, passionate about game development and AI bot creation. 
+          With strong skills in Python and Java, I'm dedicated to creating innovative technical solutions.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4">Languages</h3>
+            <ul className="space-y-2">
+              <li>English</li>
+              <li>Hindi</li>
+              <li>French</li>
+              <li>Japanese</li>
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <h3 className="text-xl font-semibold mb-4">Technical Skills</h3>
+            <ul className="space-y-2">
+              <li>Project Management</li>
+              <li>Structural Analysis</li>
+              <li>Robotics and Automation</li>
+              <li>AI-Bots Management</li>
+              <li>Creative Thinking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Projects Section */}
+      <div className="bg-white py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <Gamepad2 className="w-12 h-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Java Games Collection</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>• BrickBriz - Brick breaking game</li>
+                <li>• Snakeel - Snake game</li>
+                <li>• TicTacToe</li>
+              </ul>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <Bot className="w-12 h-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Kagi Discord Bot</h3>
+              <p className="text-gray-600">
+                AI-powered Discord bot with conversation capabilities, reminders, and music playback features.
+                Built using Python libraries.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <Palette className="w-12 h-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Freelance Design Work</h3>
+              <p className="text-gray-600">
+                Graphic design and video editing projects for colleges, brands, and coaching centers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Experience Section */}
+      <div className="container mx-auto px-6 py-16">
+        <h2 className="text-3xl font-bold mb-8">Experience</h2>
+        <div className="space-y-8">
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <div>
+                <h3 className="text-xl font-semibold">Mentor</h3>
+                <p className="text-gray-600">CIIE (Center For Innovation, Incubation and Entrepreneurship)</p>
+              </div>
+              <span className="text-gray-500">Jan 2023 - Present</span>
+            </div>
+            <ul className="space-y-2 text-gray-600">
+              <li>• Led workshops in Arduino, Python, and UI/UX</li>
+              <li>• Managed social media platforms</li>
+              <li>• Mentored teams in various hackathons</li>
+            </ul>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-sm">
+            <div className="flex justify-between items-start mb-4">
+              <div>
+                <h3 className="text-xl font-semibold">Core Member</h3>
+                <p className="text-gray-600">Google Development Student Club (GDSC)</p>
+              </div>
+              <span className="text-gray-500">July 2023 - Sept 2023</span>
+            </div>
+            <ul className="space-y-2 text-gray-600">
+              <li>• Volunteered for GDSC Cloud Jam workshop</li>
+              <li>• Managed social media presence</li>
+              <li>• Designed team profiles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-8">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400">© 2024 Kashish Thareja. All rights reserved.</p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="mailto:kashishth89@gmail.com" className="hover:text-blue-400">
+                <Mail size={20} />
+              </a>
+              <a href="tel:+919953822550" className="hover:text-blue-400">
+                <Phone size={20} />
+              </a>
+              <a href="#" className="hover:text-blue-400">
+                <Github size={20} />
+              </a>
+              <a href="#" className="hover:text-blue-400">
+                <Linkedin size={20} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default PersonalWebsite;
